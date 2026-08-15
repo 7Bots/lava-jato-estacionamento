@@ -106,9 +106,14 @@ function LoginPage() {
         transition={{ duration: 0.4 }}
         className="w-full max-w-md"
       >
-        <div className="mb-6 flex justify-center">
-          <Logo className="h-40 w-auto" />
+        <div className="mb-8 flex flex-col items-center gap-3">
+          <Logo className="h-28 w-auto" showWordmark={false} />
+          <span className="text-display gradient-text text-4xl">BelParking</span>
+          <span className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            Gestão de Pátio
+          </span>
         </div>
+
 
         <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
           <Tabs defaultValue="login">
