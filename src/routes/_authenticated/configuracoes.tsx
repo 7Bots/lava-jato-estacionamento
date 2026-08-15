@@ -19,9 +19,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/_authenticated/configuracoes")({
   head: () => ({
     meta: [
-      { title: "Configurações | Doca Lund Estacionamento" },
+      { title: "Configurações | BelParking" },
       { name: "description", content: "Preços, blocos de cobrança, vagas e dados do negócio." },
-      { property: "og:title", content: "Configurações | Doca Lund" },
+      { property: "og:title", content: "Configurações | BelParking" },
       { property: "og:description", content: "Preços, vagas e dados do negócio." },
     ],
   }),

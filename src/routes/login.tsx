@@ -14,16 +14,16 @@ export const Route = createFileRoute("/login")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Entrar | Doca Lund Estacionamento" },
+      { title: "Entrar | BelParking" },
       {
         name: "description",
         content:
-          "Acesse o painel do Doca Lund Estacionamento para controlar vagas, comandas e faturamento.",
+          "Acesse o painel do BelParking para controlar vagas, comandas e faturamento.",
       },
-      { property: "og:title", content: "Entrar | Doca Lund Estacionamento" },
+      { property: "og:title", content: "Entrar | BelParking" },
       {
         property: "og:description",
-        content: "Painel de gestão do estacionamento Doca Lund.",
+        content: "Painel de gestão do estacionamento BelParking.",
       },
     ],
   }),
@@ -106,9 +106,14 @@ function LoginPage() {
         transition={{ duration: 0.4 }}
         className="w-full max-w-md"
       >
-        <div className="mb-6 flex justify-center">
-          <Logo className="h-40 w-auto" />
+        <div className="mb-8 flex flex-col items-center gap-3">
+          <Logo className="h-28 w-auto" showWordmark={false} />
+          <span className="text-display gradient-text text-4xl">BelParking</span>
+          <span className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
+            Gestão de Pátio
+          </span>
         </div>
+
 
         <div className="rounded-2xl border border-border bg-card p-6 shadow-card">
           <Tabs defaultValue="login">
@@ -133,7 +138,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="voce@docalund.com.br"
+                    placeholder="voce@belparking.com.br"
                   />
                 </div>
                 <div className="space-y-2">
@@ -164,7 +169,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={businessName}
                     onChange={(e) => setBusinessName(e.target.value)}
-                    placeholder="Doca Lund Estacionamento"
+                    placeholder="BelParking"
                   />
                 </div>
                 <div className="space-y-2">
@@ -177,7 +182,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="voce@docalund.com.br"
+                    placeholder="voce@belparking.com.br"
                   />
                 </div>
                 <div className="space-y-2">

@@ -39,9 +39,9 @@ import {
 export const Route = createFileRoute("/_authenticated/clientes")({
   head: () => ({
     meta: [
-      { title: "Clientes | Doca Lund Estacionamento" },
+      { title: "Clientes | BelParking" },
       { name: "description", content: "Cadastro de clientes, veículos e histórico de visitas." },
-      { property: "og:title", content: "Clientes | Doca Lund" },
+      { property: "og:title", content: "Clientes | BelParking" },
       { property: "og:description", content: "Clientes, veículos e histórico de visitas." },
     ],
   }),

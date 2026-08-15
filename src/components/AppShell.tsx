@@ -49,11 +49,12 @@ export function AppShell({ children }: { children: ReactNode }) {
       >
         <div className="flex h-20 items-center justify-center px-3">
           {collapsed ? (
-            <Logo className="h-9 w-auto brightness-0 invert-0" />
+            <Logo className="h-9 w-auto" showWordmark={false} />
           ) : (
-            <Logo className="h-16 w-auto" />
+            <Logo className="h-11 w-auto" />
           )}
         </div>
+
 
         <nav className="flex flex-1 flex-col gap-1 px-3 py-2">
           {NAV.map((item) => {

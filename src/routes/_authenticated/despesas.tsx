@@ -5,9 +5,9 @@ import { ExpensesPanel } from "@/components/ExpensesPanel";
 export const Route = createFileRoute("/_authenticated/despesas")({
   head: () => ({
     meta: [
-      { title: "Despesas | Doca Lund Estacionamento" },
+      { title: "Despesas | BelParking" },
       { name: "description", content: "Controle de despesas por categoria e período." },
-      { property: "og:title", content: "Despesas | Doca Lund" },
+      { property: "og:title", content: "Despesas | BelParking" },
       { property: "og:description", content: "Controle de despesas do estacionamento." },
     ],
   }),

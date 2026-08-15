@@ -16,12 +16,12 @@ import { ExpensesPanel } from "@/components/ExpensesPanel";
 export const Route = createFileRoute("/_authenticated/lavajato")({
   head: () => ({
     meta: [
-      { title: "Lava-Jato | Doca Lund" },
+      { title: "Lava-Jato | BelParking" },
       {
         name: "description",
         content: "Kanban de ordens, serviços, despesas e faturamento do lava-jato.",
       },
-      { property: "og:title", content: "Lava-Jato | Doca Lund" },
+      { property: "og:title", content: "Lava-Jato | BelParking" },
       { property: "og:description", content: "Gestão completa do lava-jato em tempo real." },
     ],
   }),
