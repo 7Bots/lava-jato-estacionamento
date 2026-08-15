@@ -24,9 +24,9 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/_authenticated/vagas")({
   head: () => ({
     meta: [
-      { title: "Vagas | Doca Lund Estacionamento" },
+      { title: "Vagas | BelParking" },
       { name: "description", content: "Mapa interativo das vagas livres e ocupadas em tempo real." },
-      { property: "og:title", content: "Vagas | Doca Lund" },
+      { property: "og:title", content: "Vagas | BelParking" },
       { property: "og:description", content: "Mapa de vagas em tempo real." },
     ],
   }),

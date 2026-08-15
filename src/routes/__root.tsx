@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Doca Lund Estacionamento | Gestão de Pátio" },
+      { title: "BelParking | Gestão de Pátio" },
       {
         name: "description",
         content:
-          "Sistema de gestão do Doca Lund Estacionamento: check-in, vagas em tempo real, comandas e faturamento.",
+          "Sistema de gestão do BelParking: check-in, vagas em tempo real, comandas e faturamento.",
       },
-      { name: "author", content: "Doca Lund Estacionamento" },
-      { property: "og:title", content: "Doca Lund Estacionamento | Gestão de Pátio" },
+      { name: "author", content: "BelParking" },
+      { property: "og:title", content: "BelParking | Gestão de Pátio" },
       {
         property: "og:description",
         content: "Check-in, vagas em tempo real, comandas e faturamento.",

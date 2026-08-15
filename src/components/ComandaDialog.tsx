@@ -176,7 +176,7 @@ export function ComandaDialog({
           <div className="flex flex-col items-center text-center">
             <Logo className="h-14 w-auto" />
             <p className="text-display mt-2 text-xl leading-none">
-              {settings?.business_name || "Doca Lund Estacionamento"}
+              {settings?.business_name || "BelParking"}
             </p>
             {settings?.business_doc && (
               <p className="text-xs text-muted-foreground">CNPJ/CPF: {settings.business_doc}</p>

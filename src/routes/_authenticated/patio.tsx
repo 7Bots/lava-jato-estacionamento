@@ -22,9 +22,9 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 export const Route = createFileRoute("/_authenticated/patio")({
   head: () => ({
     meta: [
-      { title: "Pátio | Doca Lund Estacionamento" },
+      { title: "Pátio | BelParking" },
       { name: "description", content: "Check-in de veículos e acompanhamento ao vivo do pátio." },
-      { property: "og:title", content: "Pátio | Doca Lund" },
+      { property: "og:title", content: "Pátio | BelParking" },
       { property: "og:description", content: "Check-in de veículos e pátio ao vivo." },
     ],
   }),

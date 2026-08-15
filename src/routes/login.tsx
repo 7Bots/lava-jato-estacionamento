@@ -14,16 +14,16 @@ export const Route = createFileRoute("/login")({
   ssr: false,
   head: () => ({
     meta: [
-      { title: "Entrar | Doca Lund Estacionamento" },
+      { title: "Entrar | BelParking" },
       {
         name: "description",
         content:
-          "Acesse o painel do Doca Lund Estacionamento para controlar vagas, comandas e faturamento.",
+          "Acesse o painel do BelParking para controlar vagas, comandas e faturamento.",
       },
-      { property: "og:title", content: "Entrar | Doca Lund Estacionamento" },
+      { property: "og:title", content: "Entrar | BelParking" },
       {
         property: "og:description",
-        content: "Painel de gestão do estacionamento Doca Lund.",
+        content: "Painel de gestão do estacionamento BelParking.",
       },
     ],
   }),
@@ -133,7 +133,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="voce@docalund.com.br"
+                    placeholder="voce@belparking.com.br"
                   />
                 </div>
                 <div className="space-y-2">
@@ -164,7 +164,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={businessName}
                     onChange={(e) => setBusinessName(e.target.value)}
-                    placeholder="Doca Lund Estacionamento"
+                    placeholder="BelParking"
                   />
                 </div>
                 <div className="space-y-2">
@@ -177,7 +177,7 @@ function LoginPage() {
                     className="min-h-11"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="voce@docalund.com.br"
+                    placeholder="voce@belparking.com.br"
                   />
                 </div>
                 <div className="space-y-2">

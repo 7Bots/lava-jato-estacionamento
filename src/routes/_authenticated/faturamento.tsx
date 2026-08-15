@@ -26,12 +26,12 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/_authenticated/faturamento")({
   head: () => ({
     meta: [
-      { title: "Faturamento | Doca Lund Estacionamento" },
+      { title: "Faturamento | BelParking" },
       {
         name: "description",
         content: "Painel de faturamento, despesas e indicadores do estacionamento.",
       },
-      { property: "og:title", content: "Faturamento | Doca Lund" },
+      { property: "og:title", content: "Faturamento | BelParking" },
       { property: "og:description", content: "Indicadores e receita do estacionamento." },
     ],
   }),
