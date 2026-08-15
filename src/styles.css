@@ -1,0 +1,190 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * DOCA LUND — Park Pro design system.
+ * Palette extracted from the brand logo: retro red, teal, cream, deep ink.
+ * Semantic status colors are fixed: free = green, occupied = red, warning = amber.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --font-display: var(--font-display-family);
+  --font-sans: var(--font-sans-family);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-free: var(--free);
+  --color-free-foreground: var(--free-foreground);
+  --color-occupied: var(--occupied);
+  --color-occupied-foreground: var(--occupied-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-ink: var(--ink);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --shadow-card: var(--shadow-card-value);
+  --shadow-lift: var(--shadow-lift-value);
+}
+
+:root {
+  --radius: 0.75rem;
+  --font-display-family: "Bebas Neue", "Arial Narrow", sans-serif;
+  --font-sans-family: "Barlow", ui-sans-serif, system-ui, sans-serif;
+
+  --background: oklch(0.972 0.012 85);
+  --foreground: oklch(0.24 0.035 190);
+  --card: oklch(0.995 0.005 85);
+  --card-foreground: oklch(0.24 0.035 190);
+  --popover: oklch(0.995 0.005 85);
+  --popover-foreground: oklch(0.24 0.035 190);
+
+  --primary: oklch(0.585 0.204 25.5);
+  --primary-foreground: oklch(0.985 0.008 85);
+  --secondary: oklch(0.605 0.084 191);
+  --secondary-foreground: oklch(0.985 0.008 85);
+
+  --muted: oklch(0.938 0.012 85);
+  --muted-foreground: oklch(0.5 0.02 190);
+  --accent: oklch(0.918 0.03 191);
+  --accent-foreground: oklch(0.28 0.05 191);
+
+  --destructive: oklch(0.585 0.204 25.5);
+  --destructive-foreground: oklch(0.985 0.008 85);
+  --border: oklch(0.892 0.014 85);
+  --input: oklch(0.892 0.014 85);
+  --ring: oklch(0.605 0.084 191);
+  --ink: oklch(0.2 0.032 190);
+
+  --free: oklch(0.63 0.16 150);
+  --free-foreground: oklch(0.985 0.008 85);
+  --occupied: oklch(0.585 0.204 25.5);
+  --occupied-foreground: oklch(0.985 0.008 85);
+  --warning: oklch(0.78 0.155 76);
+  --warning-foreground: oklch(0.26 0.05 76);
+
+  --chart-1: oklch(0.585 0.204 25.5);
+  --chart-2: oklch(0.605 0.084 191);
+  --chart-3: oklch(0.78 0.155 76);
+  --chart-4: oklch(0.63 0.16 150);
+  --chart-5: oklch(0.45 0.06 250);
+
+  --sidebar: oklch(0.24 0.035 190);
+  --sidebar-foreground: oklch(0.93 0.015 85);
+  --sidebar-primary: oklch(0.585 0.204 25.5);
+  --sidebar-primary-foreground: oklch(0.985 0.008 85);
+  --sidebar-accent: oklch(0.3 0.042 190);
+  --sidebar-accent-foreground: oklch(0.97 0.01 85);
+  --sidebar-border: oklch(0.32 0.04 190);
+  --sidebar-ring: oklch(0.605 0.084 191);
+
+  --shadow-card-value: 0 1px 2px oklch(0.24 0.035 190 / 0.06), 0 8px 24px -12px oklch(0.24 0.035 190 / 0.18);
+  --shadow-lift-value: 0 12px 32px -12px oklch(0.24 0.035 190 / 0.32);
+}
+
+.dark {
+  --background: oklch(0.19 0.028 190);
+  --foreground: oklch(0.955 0.01 85);
+  --card: oklch(0.235 0.032 190);
+  --card-foreground: oklch(0.955 0.01 85);
+  --popover: oklch(0.235 0.032 190);
+  --popover-foreground: oklch(0.955 0.01 85);
+
+  --primary: oklch(0.63 0.2 25.5);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --secondary: oklch(0.62 0.09 191);
+  --secondary-foreground: oklch(0.16 0.03 190);
+
+  --muted: oklch(0.28 0.03 190);
+  --muted-foreground: oklch(0.72 0.02 190);
+  --accent: oklch(0.32 0.045 191);
+  --accent-foreground: oklch(0.95 0.01 85);
+
+  --destructive: oklch(0.63 0.2 25.5);
+  --destructive-foreground: oklch(0.99 0.005 85);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 16%);
+  --ring: oklch(0.62 0.09 191);
+  --ink: oklch(0.14 0.025 190);
+
+  --free: oklch(0.66 0.15 150);
+  --free-foreground: oklch(0.14 0.03 150);
+  --occupied: oklch(0.63 0.2 25.5);
+  --occupied-foreground: oklch(0.99 0.005 85);
+  --warning: oklch(0.8 0.15 76);
+  --warning-foreground: oklch(0.22 0.05 76);
+
+  --sidebar: oklch(0.16 0.026 190);
+  --sidebar-foreground: oklch(0.93 0.015 85);
+  --sidebar-primary: oklch(0.63 0.2 25.5);
+  --sidebar-primary-foreground: oklch(0.99 0.005 85);
+  --sidebar-accent: oklch(0.24 0.034 190);
+  --sidebar-accent-foreground: oklch(0.96 0.01 85);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.62 0.09 191);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans-family);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display-family);
+    letter-spacing: 0.01em;
+  }
+}
+
+@utility text-display {
+  font-family: var(--font-display-family);
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
