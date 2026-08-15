@@ -90,6 +90,14 @@ function LoginPage() {
     }
   }
 
+  if (!hydrated) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-10">
+        <div className="h-40 w-40 animate-pulse rounded-full bg-muted" />
+      </div>
+    );
+  }
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-10">
       <motion.div
