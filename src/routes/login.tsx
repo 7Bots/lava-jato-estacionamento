@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
+import { useHydrated } from "@/hooks/useHydrated";
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,6 +36,7 @@ export const Route = createFileRoute("/login")({
 
 function LoginPage() {
   const navigate = useNavigate();
+  const hydrated = useHydrated();
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -86,6 +88,14 @@ function LoginPage() {
         description: "Confirme seu e-mail para acessar o painel.",
       });
     }
+  }
+
+  if (!hydrated) {
+    return (
+      <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-10">
+        <div className="h-40 w-40 animate-pulse rounded-full bg-muted" />
+      </div>
+    );
   }
 
   return (
