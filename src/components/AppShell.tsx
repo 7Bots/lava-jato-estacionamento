@@ -47,11 +47,11 @@ export function AppShell({ children }: { children: ReactNode }) {
           collapsed ? "w-[76px]" : "w-64",
         )}
       >
-        <div className="flex h-20 items-center justify-center px-3">
+        <div className="flex h-28 items-center justify-center px-3">
           {collapsed ? (
-            <Logo className="h-9 w-auto" showWordmark={false} />
+            <Logo className="h-14 w-auto" showWordmark={false} />
           ) : (
-            <Logo className="h-11 w-auto" />
+            <Logo className="h-24 w-auto" />
           )}
         </div>
 
@@ -108,8 +108,8 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <div className="flex min-w-0 flex-1 flex-col">
         {/* Mobile header */}
-        <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b border-border bg-card/90 px-4 backdrop-blur md:hidden">
-          <Logo className="h-11 w-auto" />
+        <header className="sticky top-0 z-30 flex h-20 items-center justify-between border-b border-border bg-card/90 px-4 backdrop-blur md:hidden">
+          <Logo className="h-16 w-auto" />
           <Button
             variant="ghost"
             size="icon"

@@ -107,8 +107,7 @@ function LoginPage() {
         className="w-full max-w-md"
       >
         <div className="mb-8 flex flex-col items-center gap-3">
-          <Logo className="h-28 w-auto" showWordmark={false} />
-          <span className="text-display gradient-text text-4xl">BelParking</span>
+          <Logo className="h-44 w-auto" showWordmark={false} />
           <span className="text-xs uppercase tracking-[0.35em] text-muted-foreground">
             Gestão de Pátio
           </span>

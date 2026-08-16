@@ -174,7 +174,7 @@ export function ComandaDialog({
 
         <div className="rounded-xl border border-dashed border-border bg-card p-4">
           <div className="flex flex-col items-center text-center">
-            <Logo className="h-14 w-auto" />
+            <Logo className="h-24 w-auto" />
             <p className="text-display mt-2 text-xl leading-none">
               {settings?.business_name || "BelParking"}
             </p>
