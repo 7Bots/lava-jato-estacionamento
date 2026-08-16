@@ -6,8 +6,8 @@ export function LogoMark({ className = "h-12 w-auto" }: { className?: string }) 
       src={bpLogo}
       alt="BelParking"
       className={className}
-      width={260}
-      height={229}
+      width={1154}
+      height={675}
       loading="eager"
       decoding="async"
     />
